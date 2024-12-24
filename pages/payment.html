@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bukti Pembayaran Freelance Job Ws</title>
+    <link
+      rel="icon"
+      type="image/png"
+      href="../assets/image/website/latas.jpg"
+    />
+    <link rel="stylesheet" href="../styling/payment.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="nav_bar">
+      <div class="wrap_top">
+        <img src="../assets/image/website/logo.jpeg" alt="Logo" class="logo" />
+        <img
+          src="../assets/image/website/navbar.png"
+          alt="Logo"
+          class="iconBar"
+        />
+      </div>
+      <ul class="wrap_bottom">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="cara_kerja.html">Cara Kerja</a></li>
+        <li><a href="payment.html">Bukti Pembayaran</a></li>
+      </ul>
+    </nav>
+    <section class="wrap_medsos">
+      <a href="https://wa.me/6287715240225">
+        <img src="../assets/image/website/Wa.png" alt="Whatsapp" />
+      </a>
+    </section>
+    <div class="content">
+      <h1>Bukti Pembayaran</h1>
+      <p class="description">
+        Halaman ini adalah halaman yang berisi daftar riwayat pembayaran dari
+        freelance ws.
+      </p>
+
+      <div class="buttons_filters">
+        <button class="all">All</button>
+        <button class="filter">Filters</button>
+      </div>
+
+      <div class="wrap_fliters">
+        <div class="filter">
+          <span class="close">x</span>
+          <p class="title_form">Filters data</p>
+
+          <label for="dateFilter">Tanggal:</label>
+          <input
+            type="date"
+            id="dateFilter"
+            placeholder="Misal: 20 Desember 2024"
+          />
+
+          <br />
+
+          <label for="minPriceFilter">Harga Minimum:</label>
+          <input type="number" id="minPriceFilter" placeholder="0" />
+
+          <br />
+
+          <button id="filterButton">Filter</button>
+        </div>
+      </div>
+
+      <div class="images"></div>
+    </div>
+
+    <script src="../scripting/script.js"></script>
+    <script src="../scripting/payment.js"></script>
+  </body>
+</html>
